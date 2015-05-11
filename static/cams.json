@@ -203,6 +203,46 @@
           ]
         }
       ]
+    },
+    {
+      "Name": "Totem",
+      "Products": [
+        {
+          "Name": "Totem Cams",
+          "Sizes": [
+            {
+              "Name": "0.65",
+              "Start": 13.8,
+              "End": 22.5,
+              "Color": "#005ACF"
+            },
+            {
+              "Name": "0.80",
+              "Start": 17,
+              "End": 27.7,
+              "Color": "#FDFF0F"
+            },
+            {
+              "Name": "1.00",
+              "Start": 20.9,
+              "End": 34.2,
+              "Color": "#734D8A"
+            },
+            {
+              "Name": "1.25",
+              "Start": 25.7,
+              "End": 42.3,
+              "Color": "#00BF08"
+            },
+            {
+              "Name": "1.50",
+              "Start": 31.6,
+              "End": 52.2,
+              "Color": "#FF0F2F"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
