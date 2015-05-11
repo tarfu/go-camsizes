@@ -26,6 +26,7 @@
 {{end}}
 {{end}}
 <!-- Scale -->
+{{$reset := verticalAdd 15}}
 {{range $element := sizeSteps $maxSize $stepSize }}
 <div style="position:absolute; top:10px; left:{{add $element 5}}mm; width:10mm; height:20px; z-index:10; background-color:#fff; overflow:hidden; text-align:center; font-size: 8pt;">
     {{$element}}
