@@ -201,6 +201,65 @@
               "Color": "#B6B5B3"
             }
           ]
+        },
+        {
+          "Name": "Daemon",
+          "Sizes": [
+            {
+              "Name": "0",
+              "Start": 13,
+              "End": 19,
+              "Color": "Blue"
+            },
+            {
+              "Name": "0.5",
+              "Start": 17,
+              "End": 24,
+              "Color": "Red"
+            },
+            {
+              "Name": "1",
+              "Start": 19,
+              "End": 29,
+              "Color": "Gold"
+            },
+            {
+              "Name": "1.5",
+              "Start": 23,
+              "End": 35,
+              "Color": "Silver"
+            },
+            {
+              "Name": "2",
+              "Start": 29,
+              "End": 44,
+              "Color": "Red"
+            },
+            {
+              "Name": "2.5",
+              "Start": 33,
+              "End": 55,
+              "Color": "Gold"
+            },
+            {
+              "Name": "3",
+              "Start": 43,
+              "End": 66,
+              "Color": "Purple"
+            },
+            {
+              "Name": "3.5",
+              "Start": 51,
+              "End": 82,
+              "Color": "Blue"
+            },
+            {
+              "Name": "4",
+              "Start": 64,
+              "End": 100,
+              "Color": "Silver"
+            }
+          ]
         }
       ]
     },
