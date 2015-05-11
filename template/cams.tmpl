@@ -1,0 +1,55 @@
+{{define "root"}}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Cam Sizes</title>
+    <script type="text/javascript">{{pasteJS}}</script>
+</head>
+<body>
+{{ $maxSize := .MaxSize }}
+{{ $stepSize := .StepSize }}
+{{ $reset := verticalReset }}
+{{range $brand := .Brands}}
+{{ range $product := $brand.Products }}
+<div name="{{ $product.Name }}"
+     style="position:absolute; top:{{verticalAdd  35}}px; left:10mm; height:20px;z-index:100; background-color:#fff; vertical-align:bottom; font-size: 10pt;">
+    {{ $brand.Name }} {{ $product.Name }}
+</div>
+{{ range $index,  $size := $product.Sizes }}
+<div name="{{ $product.Name }}"
+     style="position:absolute; top:{{verticalAdd 20}}px; left:{{ add $size.Start 10 }}mm; width:{{ $size.GetWidth }}mm; height:20px; z-index:100; background-color:{{$size.Color}}; overflow:visible; font-size: 8pt;">
+    <div style="z-index:1000; vertical-align:middle; padding: 2px; color:#FFFFFF;"> {{$size.Name}}</div>
+</div>
+
+{{end}}
+{{end}}
+{{end}}
+<!-- Scale -->
+{{range $element := sizeSteps $maxSize $stepSize }}
+<div style="position:absolute; top:10px; left:{{add $element 5}}mm; width:10mm; height:20px; z-index:10; background-color:#fff; overflow:hidden; text-align:center; font-size: 8pt;">
+    {{$element}}
+</div>
+<div name="scale"
+     style="position:absolute; top:25px; left:{{add $element 10}}mm; width:1px; height:{{verticalAdd 0 }}px; z-index:10; background-color:#ddd;"></div>
+{{end}}
+<div style="position:absolute; top:10px; left:{{ add .MaxSize .StepSize | add .StepSize}}mm; width:10mm; height:20px; z-index:10; background-color:#fff; overflow:hidden; text-align:center; font-size: 8pt;">
+    [mm]
+</div>
+<!-- End Scale -->
+<!-- Start Settings -->
+<div style="position:absolute; top:{{verticalResetAdd 10}}px; left:{{add $maxSize 40}}mm; height:20px;z-index:100; background-color:#fff; vertical-align:bottom; font-size: 10pt; cursor:pointer;" onclick="toggleSettings()">Settings</div>
+
+{{range $brand := .Brands}}
+{{ range $product := $brand.Products }}
+
+<div name="settings" style="position:absolute; top:{{verticalAdd 20}}px; left:{{add $maxSize 40}}mm; height:20px;z-index:100; background-color:#fff; vertical-align:bottom; font-size: 10pt; visibility:visible;">
+    <input type="checkbox" name="camVisible" value="{{ $product.Name }}" checked="checked" onclick="updateView()"/> {{ $brand.Name }} {{ $product.Name }}
+</div>
+
+{{end}}
+{{end}}
+<!-- End Settings -->
+</body>
+</html>
+{{end}}
