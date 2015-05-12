@@ -1,7 +1,7 @@
 function setScaleSize(scaleHeight) {
     var scales = document.getElementsByName("scale");
     for (var i = 0; i < scales.length; i++) {
-        scales[i].style.height = scaleHeight;
+        scales[i].style.height = scaleHeight+"px";
     }
 }
 
