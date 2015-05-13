@@ -262,6 +262,47 @@
           ]
         },
         {
+          "Name": "3CU",
+          "Sizes": [
+            {
+              "Name": "0",
+              "Start": 13,
+              "End": 19,
+              "Color": "Blue"
+            },
+            {
+              "Name": "0.5",
+              "Start": 17,
+              "End": 24,
+              "Color": "Red"
+            },
+            {
+              "Name": "1",
+              "Start": 19,
+              "End": 29,
+              "Color": "Gold"
+            },
+            {
+              "Name": "1.25",
+              "Start": 21,
+              "End": 33,
+              "Color": "Purple"
+            },
+            {
+              "Name": "1.5",
+              "Start": 23,
+              "End": 35,
+              "Color": "Silver"
+            },
+            {
+              "Name": "1.75",
+              "Start": 25,
+              "End": 41,
+              "Color": "Green"
+            }
+          ]
+        },
+        {
           "Name": "4CU",
           "Sizes": [
             {
@@ -331,47 +372,6 @@
               "Color": "Silver"
             }
           ]
-        },
-        {
-          "Name": "3CU",
-          "Sizes": [
-            {
-              "Name": "0",
-              "Start": 13,
-              "End": 19,
-              "Color": "Blue"
-            },
-            {
-              "Name": "0.5",
-              "Start": 17,
-              "End": 24,
-              "Color": "Red"
-            },
-            {
-              "Name": "1",
-              "Start": 19,
-              "End": 29,
-              "Color": "Gold"
-            },
-            {
-              "Name": "1.25",
-              "Start": 21,
-              "End": 33,
-              "Color": "Purple"
-            },
-            {
-              "Name": "1.5",
-              "Start": 23,
-              "End": 35,
-              "Color": "Silver"
-            },
-            {
-              "Name": "1.75",
-              "Start": 25,
-              "End": 41,
-              "Color": "Green"
-            }
-          ]
         }
       ]
     },
@@ -418,6 +418,35 @@
     {
       "Name": "Wild Country",
       "Products": [
+        {
+          "Name": "Zero Friend",
+          "Sizes": [
+            {
+              "Name": "3",
+              "Start": 8.5,
+              "End": 12.2,
+              "Color": "Silver"
+            },
+            {
+              "Name": "4",
+              "Start": 10.3,
+              "End": 16,
+              "Color": "Gold"
+            },
+            {
+              "Name": "5",
+              "Start": 13,
+              "End": 19,
+              "Color": "Blue"
+            },
+            {
+              "Name": "6",
+              "Start": 17,
+              "End": 24,
+              "Color": "Red"
+            }
+          ]
+        },
         {
           "Name": "Helium",
           "Sizes": [
@@ -491,35 +520,6 @@
               "Start": 118,
               "End": 194,
               "Color": "Green"
-            }
-          ]
-        },
-        {
-          "Name": "Zero Friend",
-          "Sizes": [
-            {
-              "Name": "3",
-              "Start": 8.5,
-              "End": 12.2,
-              "Color": "Silver"
-            },
-            {
-              "Name": "4",
-              "Start": 10.3,
-              "End": 16,
-              "Color": "Gold"
-            },
-            {
-              "Name": "5",
-              "Start": 13,
-              "End": 19,
-              "Color": "Blue"
-            },
-            {
-              "Name": "6",
-              "Start": 17,
-              "End": 24,
-              "Color": "Red"
             }
           ]
         }
